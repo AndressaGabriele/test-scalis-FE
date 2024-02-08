@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# README for Test-Scalis-Frontend
+
+## Overview
+
+This frontend application is built using Next.js, a React framework that enables functionality such as server-side rendering and generating static websites for React-based web applications. It interacts with the backend service developed for managing bank accounts, allowing users to create new accounts, view account balances, and transfer funds between accounts. The application utilizes a responsive design, making it accessible on various devices.
+
+## Technologies Used
+
+- **Next.js**: A React framework for building user interfaces with server-side rendering and static site generation.
+- **React**: A JavaScript library for building user interfaces.
+- **Redux**: A predictable state container for JavaScript apps, used for managing application state.
+- **Bootstrap** and **React-Bootstrap**: For styling and layout with pre-defined components.
+- **Axios**: A promise-based HTTP client for making requests to the backend.
+- **React Icons**: Provides common icons to be used in the React applications.
 
 ## Getting Started
 
-First, run the development server:
+To run this project locally, you need to have Node.js installed on your machine. Follow these steps to set up and start the project:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repository to your local machine.
+2. Navigate to the frontend project directory.
+3. Install the dependencies:
+   ```sh
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Running the Application
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Start the development server:
+  ```sh
+  npm run dev
+  ```
+- The application will be available at `http://localhost:3000`.
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- **User Management**: Users can view and select existing users from a dropdown menu.
+- **Account Information**: Display checking and savings account balances for the selected user.
+- **Fund Transfer**: Users can transfer funds between checking and savings accounts.
+- **New Account Creation**: Allows the creation of new user accounts with initial checking and savings balances.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- The `page.tsx` file contains the main React component that renders the UI, handling state management, user interactions, and API requests.
+- Styles are managed using module CSS for component-specific styling, along with Bootstrap for layout and common UI elements.
 
-## Deploy on Vercel
+## API Integration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The frontend application communicates with the backend through RESTful API endpoints using Axios for data fetching and operations like account creation and fund transfers.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Conclusion
+
+This README provides an overview and guide for running the Test-Scalis-Frontend application. It demonstrates a modern web application setup using Next.js, React, Redux, and Bootstrap, showcasing skills in frontend development and integration with a backend service.
+
