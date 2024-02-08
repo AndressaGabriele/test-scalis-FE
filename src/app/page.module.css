@@ -1,8 +1,32 @@
 .container {
-  display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
+
+}
+
+.userSelect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px 5px;
+  gap: 0.5rem;
+  color: rgba(14,0, 174, 0.734);
+}
+
+.title {
+  color: rgba(14,0, 174, 0.734);
+    gap: 4rem;
+
+}
+
+.select {
+  background-color: #7796f20f;
+  padding: 5px;
+  border: 2px #0f21e7ef solid;
+  border-radius: 10px 10px 10px;
+  color: rgba(14,0, 174, 0.734);
 }
 
 .navBar {
@@ -14,17 +38,18 @@
   padding: 10px 20px 10px;
   font-size: 10px;
   gap: 5px;
-  color: rgba(0, 0, 255, 0.734);
-
-}
-.iconProfile{
-    /* padding: 10px; */
-    align-items: center;
-    justify-content: center;
+  color: rgba(14,0, 174, 0.734);
 
 }
 
-.accountsTitle  {
+.iconProfile {
+  /* padding: 10px; */
+  align-items: center;
+  justify-content: center;
+
+}
+
+.accountsTitle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,8 +57,25 @@
   gap: 0.5rem;
   margin-top: 4rem;
   font-size: 10px;
-  color: rgb(24, 24, 99);
+  color: rgba(14,0, 174, 0.734);
 
+}
+
+
+.containerGrid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 50px;
+}
+
+.amountInput {
+  background-color: #ffffff0f;
+  padding: 5px;
+  border: 2px #0f21e7ef solid;
+  border-radius: 5px 5px 5px;
+  color: rgba(14,0, 174, 0.734);
 }
 
 .description p {
@@ -119,6 +161,7 @@
 .logo {
   position: relative;
 }
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -190,11 +233,9 @@
     border-radius: 0;
     border: none;
     border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
+    background: linear-gradient(to bottom,
+        rgba(var(--background-start-rgb), 1),
+        rgba(var(--callout-rgb), 0.5));
     background-clip: padding-box;
     backdrop-filter: blur(24px);
   }
@@ -205,11 +246,9 @@
     inset: auto 0 0;
     padding: 2rem;
     height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
+    background: linear-gradient(to bottom,
+        transparent 0%,
+        rgb(var(--background-end-rgb)) 40%);
     z-index: 1;
   }
 }
@@ -235,6 +274,7 @@
   from {
     transform: rotate(360deg);
   }
+
   to {
     transform: rotate(0deg);
   }
